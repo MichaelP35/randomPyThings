@@ -7,8 +7,10 @@ def gen():
     num3 = int(input("What Number to Stop on? = "))
     generator = random.randrange(num1, num2)
     while generator != num3:
-        generator = random.randrange(num1, num2)
         print(generator)
+        generator = random.randrange(num1, num2)
+    else:
+        print([generator], "Done!")
 
 
 def theinput():
