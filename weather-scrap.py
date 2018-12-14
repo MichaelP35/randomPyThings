@@ -2,10 +2,9 @@ import requests
 from bs4 import BeautifulSoup
 
 
-# Weather.gov's Forecast for Chicago
-url = (
-    'https://forecast.weather.gov/'
-    'MapClick.php?lat=41.96821070000004&lon=-87.76519899999994')
+# Weather.gov's Forecast Search
+locationinput = input("Input Your Zipcode = ")
+url = ('https://www.weather.gov/' + locationinput)
 
 # Retreieves Data
 data = requests.get(url)
