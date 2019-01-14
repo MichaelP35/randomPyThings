@@ -20,4 +20,4 @@ TemperatureF = soup.find(
     'p', {'class': 'myforecast-current-lrg'}).text.strip()
 TemperatureC = soup.find(
     'p', {'class': 'myforecast-current-sm'}).text.strip()
-print(Conditions, TemperatureF, TemperatureC)
+print(f"\n{Conditions} {TemperatureF} {TemperatureC}")
