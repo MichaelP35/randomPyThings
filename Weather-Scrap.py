@@ -3,10 +3,10 @@ from bs4 import BeautifulSoup
 
 
 # Weather.gov's Forecast Search
-locationinput = input("Input Your Zipcode = ")
-url = ('https://www.weather.gov/' + locationinput)
+location_input = input("Input Your Zip-code = ")
+url = ('https://www.weather.gov/' + location_input)
 
-# Retreieves Data
+# Retrieves Data
 data = requests.get(url)
 
 # Converts Data using BS4
